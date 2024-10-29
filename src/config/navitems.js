@@ -9,25 +9,25 @@ export const navItems = [
         key: 1,
         label: "Blog",
         icon: "ph-chats-circle",
-        href: "/blog",
+        href: "/blog/",
     },
     {
         key: 2,
         label: "About",
         icon: "ph-info",
-        href: "/about",
+        href: "/about/",
     },
     {
         key: 3,
         label: "Projects",
         icon: "ph-briefcase",
-        href: "/projects",
+        href: "/projects/",
     },
     {
         key: 4,
         label: "Contact",
         icon: "ph-envelope",
-        href: "/contact",
+        href: "/contact/",
     },
 ]
 
