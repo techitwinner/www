@@ -1,7 +1,8 @@
 # www
 
-This is the source code for my personal website, hosted at yourwebsite.com. The project is built exclusively with Bun, so be sure to have Bun installed if you want to run it locally.
-Getting Started
+This is the source code for my personal website, hosted at [techit.win](https://techit.win). The project package manager is Bun, so be sure to have Bun installed if you want to run it locally.  
+But actually I think it will works with `npm` or `yarn` too.
+### Getting Started
 
 To use this repository as a template for your own site, follow these steps:
 
