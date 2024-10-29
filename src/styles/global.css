@@ -198,8 +198,6 @@ pre, code, tt, samp, .font-mono {
     z-index: 1001;
     transition: var(--transition3);
     border-radius: 16px 0 0 16px;
-    filter: blur(8px);
-    opacity: 0;
 }
 
 .drawer-content {
@@ -250,8 +248,6 @@ pre, code, tt, samp, .font-mono {
 .drawer-toggle:checked ~ .drawer {
     transition: var(--transition3);
     transform: translateX(0%);
-    filter: unset;
-    opacity: 1;
 }
 
 .drawer-toggle:checked ~ .drawer-overlay {
