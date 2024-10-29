@@ -2,6 +2,7 @@
 title: "ผมทำรีซอร์สแพ็คแก้ภาษาไทยมาแจก! (Minecraft 1.21+)"
 description: "ผมทำรีซอร์สแพ็คไมน์คราฟต์แก้ภาษาไทยมาแจกครับ สามารถนำไปใช้โดยไม่ต้องขออนุญาตและนำไปเผยแพร่ต่อได้ครับ"
 pubDate: 2024-10-4
+language: "th-th"
 tags: ["minecraft", "resource-pack"]
 heroImage: "https://files.techit.win/images/site/mc-thaifixes.png"
 ---

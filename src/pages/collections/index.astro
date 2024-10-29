@@ -1,0 +1,37 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from "../../layouts/Layout.astro";
+import PostCard from "../../components/PostCard.astro";
+
+// Fetch and sort posts by publication date (newest first)
+const blogs = (await getCollection('collection'));
+---
+<Layout
+        title="Collection | Techit’s Space"
+        description="Collection of useful stuff that I think I want to share."
+        ogTitle="Collection @ Techit’s Space"
+        ogDescription="Collection of useful stuff that I think I want to share."
+        ogUrl="https://techit.win/collections"
+>
+    <main>
+        <section class="head">
+            <div class="container md:text-start">
+                <p class="heading">Blog</p>
+                <p class="text-xl">Welcome to my personal blog page, here will be updates and posts from me.</p>
+            </div>
+        </section>
+        <div class="i9d2">
+            <div class="container">
+                {
+                    blogs.map((post) => (
+                            <PostCard
+                                    title={post.data.title}
+                                    desc={post.data.description}
+                                    url={`/collections/${post.slug}`}
+                            />
+                    ))
+                }
+            </div>
+        </div>
+    </main>
+</Layout>

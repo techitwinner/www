@@ -1,0 +1,44 @@
+---
+import Logo from "./Logo.astro";
+const currentYear = new Date().getFullYear();
+---
+<footer class="bg-[rgba(var(--md-sys-color-surface-container-low))] i9d2">
+    <div class="container">
+        <section class="grid grid-cols-1 md:grid-cols-2">
+            <div class="flex flex-col gap-2 text-start items-start">
+                <Logo size="48" color="rgba(var(--md-sys-color-on-surface))"/>
+                <h3>Techit Thawiang</h3>
+                <p>Copyleft 2023 - {currentYear} Techit Thawiang. Some rights reserved.</p>
+                <p>The content of this website is licensed under the GPLv3.0 license.<br/>Please note that logos and trademarks displayed on this site are covered under separate licenses or are proprietary.</p>
+                <div class="inline-flex gap-4">
+                    <a class="link" href="/attributions">Attributions</a>
+                    <a class="link" href="https://github.com/techitwinner/www" target="_blank">Source Code</a>
+                </div>
+            </div>
+            <div class="flex flex-col md:items-end justify-end">
+                <div class="inline-flex gap-4">
+                    <a class="footer-link-social" href="/rss.xml" target="_blank"><i class="ph ph-rss"></i></a>
+                    <a class="footer-link-social" href="https://github.com/techitwinner/" target="_blank"><i class="ph ph-github-logo"></i></a>
+                    <a class="footer-link-social" href="https://x.com/techitwinner/" target="_blank"><i class="ph ph-x-logo"></i></a>
+                    <a class="footer-link-social" href="https://facebook.com/techitwinner/" target="_blank"><i class="ph ph-facebook-logo"></i></a>
+                    <a class="footer-link-social" href="https://instagram.com/techitwinner/" target="_blank"><i class="ph ph-instagram-logo"></i></a>
+                </div>
+            </div>
+        </section>
+    </div>
+</footer>
+
+<style>
+    .footer-link-social {
+        color: rgba(var(--md-sys-color-primary));
+        font-size: 2rem;
+        transition: var(--transition1);
+    }
+    .footer-link-social:hover {
+        opacity: 0.9;
+    }
+    .footer-link-social:active {
+        scale: 0.95;
+        opacity: 0.8;
+    }
+</style>

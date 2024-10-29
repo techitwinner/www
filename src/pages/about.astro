@@ -1,54 +1,85 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import PageSection from "../components/PageSection.astro";
-import ContentSection from "../components/ContentSection.astro";
----
+
+import Layout from "../layouts/Layout.astro";---
 <Layout
-        title="About | Techit Thawiang"
+        title="About | Techit's Space"
         description="Learn more about me—my name, age, interests, history, and everything that defines who I am."
-        navTitle="Know more,<br/>about me."
         ogTitle="About Me, Techit Thawiang"
         ogDescription="Let's get to know more about me!"
         ogUrl="https://techit.win/about"
 >
-    <PageSection>
-        <ContentSection>
-            <h1>Hello! 👋</h1>
-        </ContentSection>
-        <ContentSection>
-            <p >Hi, My name is Techit Thawiang. A <span class="text-highlight">fifteen</span> years old kid with a passion on many thing, especially coding. You can call me Sumo, that&apos;s my nickname.</p>
-        </ContentSection>
-        <ContentSection>
-            <p >This is what I look like.</p>
-            <img class="this-is-me" alt="Techit in 2023" src="https://files.techit.win/images/custom/PFP/90890uf345289ju02f345j289f345ju89023f452ju38940f52345f8ju90.png"/>
-            <p style="font-size:13px;">Me at school doing English "Spelling Bee competition"</p>
-        </ContentSection>
-        <ContentSection>
-            <p >When I'm not working on my coding projects, I’m busy exploring other interests like gaming, reading about tech innovations, and learning new ways to push myself beyond my limits. I believe every mistake is a lesson, and I love improving from each one.</p>
-        </ContentSection>
-        <ContentSection>
-            <p >One day, I hope to use my coding skills to build something big—maybe create tools or apps that others find helpful and enjoyable.</p>
-        </ContentSection>
-        <ContentSection>
-            <p >For now, I’m just a teen who loves to learn and explore new possibilities in tech.</p>
-        </ContentSection>
-    </PageSection>
-    <PageSection display="grid" className="grid-cols-1 sm:grid-cols-2">
-        <ContentSection>
-            <h3>About this Website</h3>
-            <p>
-                This website is built with Astro, which I didn't really wanted to.<br/>
-                Using web frameworks can be tricky and hard to learn, but yeah it can do what I want as I'm super lazy.<br/><br/>
-                If you’d like to create your own simple personal page, check it out at <a class="link" href="https://github.com/techitwinner/web">github.com/techitwinner/web</a>.<br/>
-                It’s completely free and open-source, licensed under the MIT license.
-            </p>
-        </ContentSection>
-        <ContentSection>
-            <h3>Where is the Thai language?</h3>
-            <p>
-                Although it was once available, I prefer to keep things simple.<br/><br/>
-                Implementing internationalization (i18n) can be challenging without JavaScript and external tools,<br/>so reintroducing Thai seems unnecessary.
-            </p>
-        </ContentSection>
-    </PageSection>
+    <main>
+        <section class="head">
+            <div class="container">
+                <p class="heading">About Me</p>
+                <p class="text-xl">Learn more about me—my name, age, interests, history, and everything that defines who I am.</p>
+            </div>
+        </section>
+        <section class="i9d2">
+            <div class="container">
+                <p class="text-xl">Hi, My name is Techit Thawiang. An almost fifteen years old kid with a passion on many thing, especially coding. You can call me Sumo, that&apos;s my nickname.</p>
+                <div>
+                    <p class="text-xl">This is what I look like.</p>
+                    <img class="this-is-me" alt="Techit in 2023" src="https://files.techit.win/images/custom/PFP/90890uf345289ju02f345j289f345ju89023f452ju38940f52345f8ju90.png"/>
+                    <p class="text-sm">Me at school doing English "Spelling Bee competition"</p>
+                </div>
+                <div>
+                    <p>When I'm not working on my coding projects, I’m busy exploring other interests like gaming, reading about tech innovations, and learning new ways to push myself beyond my limits. I believe every mistake is a lesson, and I love improving from each one.</p>
+                </div>
+                <div>
+                    <p>One day, I hope to use my coding skills to build something big—maybe create tools or apps that others find helpful and enjoyable.</p>
+                </div>
+                <div>
+                    <p>For now, I’m just a teen who loves to learn and explore new possibilities in tech.</p>
+                </div>
+            </div>
+        </section>
+        <section class="i9d2">
+            <div class="container">
+                <section class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                    <div>
+                        <h4>About this Website</h4>
+                        <p class="text-md">
+                            This website is built with Astro, which I didn't really wanted to.<br/>
+                            Using web frameworks can be tricky and hard to learn, but yeah it can do what I want as I'm super lazy.<br/><br/>
+                            If you’d like to create your own simple personal page, check it out at <a class="link" href="https://github.com/techitwinner/www">github.com/techitwinner/www</a>.<br/>
+                            It’s completely free and open-source, licensed under the MIT license.
+                        </p>
+                    </div>
+                    <div>
+                        <h4>Where is the Thai language?</h4>
+                        <p class="text-md">
+                            Although it was once available, I prefer to keep things simple.<br/><br/>
+                            Implementing internationalization (i18n) can be challenging without JavaScript and external tools,<br/>so reintroducing Thai seems unnecessary.
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
 </Layout>
+
+<style>
+    .this-is-me {
+        --thisisme-hw: 256px;
+        max-width: var(--thisisme-hw);
+        max-height: var(--thisisme-hw);
+        height: 100%;
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .container {
+        div {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            margin: 1rem 0;
+            @apply text-xl;
+        }
+    }
+
+    .text-md {
+        font-size: 1rem;
+    }
+</style>

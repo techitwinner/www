@@ -1,41 +1,41 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import PageSection from "../components/PageSection.astro";
-import ContentSection from "../components/ContentSection.astro";
----
+
+import Layout from "../layouts/Layout.astro";---
 <Layout
         title="Contact | Techit Thawiang"
         description="Contact me"
-        navTitle="Get in touch<br/>with me."
         ogTitle="Various way to contact Techit"
         ogDescription="Contact Techit"
         ogUrl="https://techit.win/contact"
 >
-    <PageSection>
-        <ContentSection>
-            <h1>Yo fone linging 📞</h1>
-        </ContentSection>
-        <ContentSection>
-            <p >Not sure if you're here to get in touch or just exploring the site, but either way, I'd love to hear from you! Here's how you can contact and follow me.</p>
-        </ContentSection>
-        <ContentSection>
-            <p >Social media platform</p>
-            <ContentSection flexDir="row">
-                <ContentSection flexDir="row">
+    <main>
+        <section class="head">
+            <div class="container md:text-start">
+                <p class="heading">Contact</p>
+                <p class="text-xl">How to contact Techit 101.</p>
+            </div>
+        </section>
+        <section class="i9d2">
+            <div class="container md:text-start">
+                <p class="text-xl">Not sure if you're here to get in touch or just exploring the site, but either way, I'd love to hear from you! Here's how you can contact and follow me.</p>
+            </div>
+            <div class="container md:text-start">
+                <h3>Social Media</h3>
+                <section class="flex flex-row flex-wrap gap-2">
                     <a target="_blank" rel="noreferrer noopener nofollow" class="btn" href="https://instagram.com/techitwinner">Instagram</a>
                     <a target="_blank" rel="noreferrer noopener nofollow" class="btn" href="https://facebook.com/techitwinner">Facebook</a>
                     <a target="_blank" rel="noreferrer noopener nofollow" class="btn" href="https://keybase.io/techitwinner">Keybase</a>
                     <a target="_blank" rel="noreferrer noopener nofollow" class="btn" href="https://github.com/techitwinner">GitHub</a>
-                    <a target="_blank" rel="noreferrer noopener nofollow" class="btn" href="https://x.com/techitwinner">X</a>
-                </ContentSection>
-            </ContentSection>
-        </ContentSection>
-        <ContentSection>
-            <p >Or e-mail addresses...</p>
-            <div class="flex-col-gap-2  font-mono" style="user-select:none;gap:8px;">
-                <p style="margin:0;">techit<span style="color:rgb(var(--color-accent))">[at]</span>dailitation<span style="color:rgb(var(--color-accent))">[dot]</span>xyz</p>
-                <p style="margin:0;">techitwinner<span style="color:rgb(var(--color-accent))">[at]</span>gmail<span style="color:rgb(var(--color-accent))">[dot]</span>com</p>
+                    <a target="_blank" rel="noreferrer noopener nofollow" class="btn" href="https://x.com/techitwinner">X (Twitter)</a>
+                </section>
             </div>
-        </ContentSection>
-    </PageSection>
+            <div class="container md:text-start">
+                <h3>or... E-mail addresses</h3>
+                <section class="flex flex-col text-xl">
+                    <p style="margin:0;">techit<span style="color:rgb(var(--md-sys-color-primary))">[at]</span>dailitation<span style="color:rgb(var(--md-sys-color-primary))">[dot]</span>xyz</p>
+                    <p style="margin:0;">techitwinner<span style="color:rgb(var(--md-sys-color-primary))">[at]</span>gmail<span style="color:rgb(var(--md-sys-color-primary))">[dot]</span>com</p>
+                </section>
+            </div>
+        </section>
+    </main>
 </Layout>

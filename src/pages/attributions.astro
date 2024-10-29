@@ -1,0 +1,79 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+<Layout
+        title="Attributions | Techit's Space"
+        description=""
+        ogTitle="Attributions"
+        ogDescription=""
+        ogUrl="https://techit.win/attributions"
+        noIndex
+>
+    <main>
+        <section class="head">
+            <div class="container md:text-start">
+                <p class="heading">Attributions</p>
+                <p class="text-xl">This is where I put attributions to all work I used on my website, some not required but I will still put.</p>
+            </div>
+        </section>
+        <section class="i9d2">
+            <div class="container md:text-start">
+                <p class="text-xl font-medium">Images, Artwork</p>
+                <div>
+                    <p>"Underwater and lights"</p>
+                    <p class="attribution-link">
+                        Photo by <a rel="nofollow noreferrer noopener" target="_blank" href="https://unsplash.com/@cristianpalmer?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Cristian Palmer</a> on <a rel="nofollow noreferrer noopener" target="_blank" href="https://unsplash.com/photos/clear-blue-body-of-water-XexawgzYOBc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+                    </p>
+                    <p class="opacity-75 text-sm">Usage: Hero image on home page</p>
+                </div>
+            </div>
+            <div class="container md:text-start">
+                <p class="text-xl font-medium">Designing, Typefaces</p>
+                <div>
+                    <p class="attribution-link">
+                        <a rel="nofollow noreferrer noopener" target="_blank" href="https://m3.material.io">Material Design 3</a> by <a rel="nofollow noreferrer noopener" target="_blank" href="https://google.com">Google</a>
+                    </p>
+                    <p class="opacity-75 text-sm">Usage: Entire website (inspired by, mimic the design)</p>
+                </div>
+                <div>
+                    <p class="attribution-link">
+                        Webpage Layout Inspiration by <a rel="nofollow noreferrer noopener" target="_blank" href="https://lineageos.org">LineageOS Webpage</a>
+                    </p>
+                    <p class="opacity-75 text-sm">Usage: Entire website (layout, design)</p>
+                </div>
+                <div>
+                    <p class="attribution-link">
+                        Roboto, Roboto Mono, Fraunces and Noto Sans Thai Looped on <a rel="nofollow noreferrer noopener" target="_blank" href="https://fonts.google.com">Google Fonts</a>
+                    </p>
+                    <p class="opacity-75 text-sm">Usage: Entire website (web fonts)</p>
+                </div>
+                <div>
+                    <p class="attribution-link">
+                        <a rel="nofollow noreferrer noopener" target="_blank" href="https://phosphoricons.com">Phosphor Icons</a> by <a rel="nofollow noreferrer noopener" target="_blank" href="https://github.com/phosphor-icons">Phosphor Icons</a> and <a rel="nofollow noreferrer noopener" target="_blank" href="https://tobiasfried.com">Tobias Fried</a>
+                    </p>
+                    <p class="opacity-75 text-sm">Usage: Entire website (web icons)</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</Layout>
+
+<style>
+    .head {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(var(--md-sys-color-primary));
+        color: rgba(var(--md-sys-color-on-primary));
+    }
+    .attribution-link {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.25rem;
+        a {
+            color: rgba(var(--md-sys-color-primary));
+            text-decoration: underline;
+        }
+    }
+</style>

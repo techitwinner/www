@@ -2,6 +2,7 @@
 title: "Welcome to Web!"
 description: "A deep dive into the world of web development"
 pubDate: 2024-09-27
+language: "en-us"
 tags: ["web", "introduction", "development", "HTML", "CSS", "JavaScript"]
 ---
 
@@ -30,37 +31,67 @@ Yes here it is[^1]
 ---
 import { type CollectionEntry, getCollection } from 'astro:content';
 import Layout from "../../layouts/Layout.astro";
-import PageSection from "../../components/PageSection.astro";
-import ContentSection from "../../components/ContentSection.astro";
 
 export async function getStaticPaths() {
-	const posts = await getCollection('blog');
-	return posts.map((post) => ({
-		params: { slug: post.slug },
-		props: post,
-	}));
+  const posts = await getCollection('blog');
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: post,
+  }));
 }
-type Props = CollectionEntry<'posts'>;
 
-const post = Astro.props;
+type Props = CollectionEntry<'blog'>;
+
+const { slug } = Astro.params;
+const posts = await getCollection('blog');
+const post = posts.find((p) => p.slug === slug);
+
+if (!post) {
+  throw new Error("Post not found");
+}
+
 const { Content } = await post.render();
 ---
-
 <Layout
-	{...post.data}
-	title={post.data.title}
-	description={post.data.description}
-	navTitle={post.data.title}
-	ogTitle={post.data.title}
-	ogDescription={post.data.description}
-	ogUrl={`https://techit.win/posts/${post.data.url}`}
+  {...post.data}
+  title={post.data.title}
+  description={post.data.description}
+  ogTitle={post.data.title}
+  ogDescription={post.data.description}
+  ogUrl={`https://techit.win/posts/${post.slug}`}
 >
-	<PageSection>
-		<ContentSection>
-			<Content class="content"/>
-		</ContentSection>
-	</PageSection>
+  <main>
+    <section class="head">
+      <div class="container md:text-start">
+        <p>BLOG POST</p>
+        <h1 class="text-7xl">{post.data.title}</h1>
+        <p class="text-lg">{post.data.description}</p>
+      </div>
+    </section>
+    <section class="i9d2">
+      <div class="container md:text-start">
+        <Content/>
+      </div>
+    </section>
+  </main>
 </Layout>
+
+<style>
+.head {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(var(--md-sys-color-primary));
+  color: rgba(var(--md-sys-color-on-primary));
+}
+.i9d2 {
+  pre {
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+}
+</style>
 ```
 
 [^1]: This is my actual code for this page, but for more code, check [this](https://github.com/techitwinner/web) out.  

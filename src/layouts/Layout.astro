@@ -1,27 +1,23 @@
 ---
-import Navbar from "../components/Navbar.astro";
-import Footer from "../components/Footer.astro";
+import NavigationRail from "../components/NavigationRail.astro";
 interface Props {
 	title: string;
 	description: string;
-	navTitle: string;
 	ogTitle: string;
 	ogImage?: string;
 	ogDescription: string;
 	ogUrl: string;
 	ogType?: string;
 	noIndex?: boolean;
-	noNavbar?: boolean;
-	noFooter?: boolean;
-	noBg?: boolean;
 }
 
-const { title, description, navTitle, ogDescription, ogTitle, ogUrl, ogImage, ogType, noIndex, noNavbar, noFooter, noBg } = Astro.props;
+const { title, description, ogDescription, ogTitle, ogUrl, ogImage, ogType, noIndex} = Astro.props;
 import '../styles/global.css';
+import NavigationFooter from "../components/NavigationFooter.astro";
 ---
 
-<!DOCTYPE html>
-<html dir="ltr" lang="en">
+<!doctype html>
+<html lang="en">
 	<head>
 		<!-- Generic -->
 		<title>{title}</title>
@@ -63,32 +59,11 @@ import '../styles/global.css';
 		<!-- Scripts and Stuff -->
 		<script src="https://unpkg.com/@phosphor-icons/web"></script>
 	</head>
-	<body class="w-full">
-		<div class={noNavbar ? 'hidden' : 'w-full max-w-[56rem]'}>
-			<Navbar title={navTitle}/>	
-		</div>
-		<slot />
-		<div class={noBg ? 'hidden' : 'aurora'}/>
-		<div class={noFooter ? 'hidden' : 'w-full max-w-[56rem]'}>
-			<Footer/>
+	<body class="roboto">
+		<NavigationRail/>
+		<div class="main-div">
+			<slot />
+			<NavigationFooter/>
 		</div>
 	</body>
 </html>
-
-<style>
-	.aurora {
-		opacity: 0.7;
-		background-image: url(https://files.techit.win/images/background/GodRayNew.png);
-		background-size: cover;
-		background-position: center;
-		background-attachment: fixed;
-		background-repeat: no-repeat;
-		display: block;
-		position: fixed;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		bottom: 0;
-		z-index: -100;
-	}
-</style>

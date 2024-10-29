@@ -3,21 +3,21 @@ import { type CollectionEntry, getCollection } from 'astro:content';
 import Layout from "../../layouts/Layout.astro";
 
 export async function getStaticPaths() {
-    const posts = await getCollection('collection');
+    const posts = await getCollection('blog');
     return posts.map((post) => ({
         params: { slug: post.slug },
         props: post,
     }));
 }
 
-type Props = CollectionEntry<'collection'>;
+type Props = CollectionEntry<'blog'>;
 
 const { slug } = Astro.params;
-const posts = await getCollection('collection');
+const posts = await getCollection('blog');
 const post = posts.find((p) => p.slug === slug);
 
 if (!post) {
-    throw new Error("Collection not found");
+    throw new Error("Post not found");
 }
 
 const { Content } = await post.render();
@@ -28,12 +28,12 @@ const { Content } = await post.render();
     description={post.data.description}
     ogTitle={post.data.title}
     ogDescription={post.data.description}
-    ogUrl={`https://techit.win/collections/${post.slug}`}
+    ogUrl={`https://techit.win/blog/${post.slug}`}
 >
     <main>
         <section class="head">
             <div class="container md:text-start">
-                <p>COLLECTION NAME</p>
+                <p>BLOG POST</p>
                 <p class="heading">{post.data.title}</p>
                 <p class="text-lg">{post.data.description}</p>
             </div>
@@ -59,6 +59,13 @@ const { Content } = await post.render();
             padding: 1rem;
             border-radius: 8px;
             font-size: 14px;
+        }
+        a {
+            text-decoration: underline;
+            color: rgba(var(--md-sys-color-primary));
+        }
+        img {
+            margin: 1rem 0;
         }
     }
 </style>
