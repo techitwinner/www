@@ -251,7 +251,6 @@ pre, code, tt, samp, .font-mono {
 }
 
 .drawer-toggle:checked ~ .drawer-overlay {
-    backdrop-filter: blur(10px);
     opacity: 1;
     visibility: visible;
     pointer-events: all;
