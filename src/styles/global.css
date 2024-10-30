@@ -49,6 +49,15 @@ body {
     font-family: "Fraunces", 'Noto Sans Thai Looped', serif;
 }
 
+.heading2 {
+    @apply text-4xl sm:text-5xl font-bold;
+    font-family: "Fraunces", 'Noto Sans Thai Looped', serif;
+}
+
+.big-text {
+    @apply text-lg md:text-xl;
+}
+
 h1,h2,h3,h4,h5,h6 {
     font-family: "Fraunces", 'Noto Sans Thai Looped', serif;
     margin: 0;
@@ -108,6 +117,9 @@ pre, code, tt, samp, .font-mono {
 .container {
     @apply w-full max-w-[60rem] md:max-w-[72rem] gap-2 flex flex-col py-8 px-4 md:py-12 md:px-8;
 }
+ul {
+    margin: 0 0 0 1.25rem;
+}
 /* ----- END MAIN STYLING ----- */
 
 /* ----- START CUSTOM STYLING ----- */
@@ -143,7 +155,7 @@ pre, code, tt, samp, .font-mono {
         padding: 0.25rem 0.75rem;
         align-items: center;
         justify-content: center;
-        border-radius: 9999px;
+        border-radius: 8px;
         text-decoration: none;
         color: rgba(var(--md-sys-color-on-surface));
         transition: var(--transition1);
@@ -273,7 +285,7 @@ pre, code, tt, samp, .font-mono {
 }
 
 .card-outline {
-    @apply shadow hover:shadow-lg active:shadow hover:opacity-90 active:opacity-80;
+    @apply shadow-none hover:shadow-lg hover:opacity-90 active:opacity-80;
     border: 1px solid rgba(var(--md-sys-color-outline-variant));
     transition: var(--transition1);
     .content {
@@ -284,6 +296,7 @@ pre, code, tt, samp, .font-mono {
 .link {
     color: rgba(var(--md-sys-color-primary));
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .btn {
@@ -293,6 +306,7 @@ pre, code, tt, samp, .font-mono {
     display: inline-flex;
     flex-direction: row;
     gap: 0.5rem;
+    position: relative;
     align-items: center;
     padding: 0.25rem 1.25rem;
     border-radius: 20px;
@@ -300,15 +314,13 @@ pre, code, tt, samp, .font-mono {
     color: rgba(var(--md-sys-color-on-primary));
     cursor: pointer;
     transition: var(--transition1);
+    overflow: hidden;
+    --btn-ripple-color: rgba(var(--md-sys-color-on-primary),0.5);
 }
 .btn:hover {
     opacity: 0.9;
 }
-.btn:active {
-    opacity: 0.8;
-}
 .btn-outline {
-    @apply shadow-md;
     background: transparent;
     color: rgba(var(--md-sys-color-primary));
     border: 1px solid rgba(var(--md-sys-color-outline));
@@ -316,10 +328,6 @@ pre, code, tt, samp, .font-mono {
 .btn-outline:hover {
     @apply shadow-lg;
     background: rgba(var(--md-sys-color-on-surface),0.08);
-}
-.btn-outline:active {
-    @apply shadow-md;
-    background: rgba(var(--md-sys-color-on-surface),0.12);
 }
 .btn-tonal {
     background: rgba(var(--md-sys-color-secondary-container));
