@@ -13,12 +13,12 @@ Nevermind, let's just see what is changed.
 ---
 
 #### 1. Obviously theming.
-As you can see now, my website is newly design, this was inspired by LineageOS website that has Material vibes y'know?  
-So me with free time and see that, of course it is beautiful so I start coding my website and spent ages with CSS-ing my website.
+As you can see now, my website is newly designed, this was inspired by LineageOS website that has Material vibes y'know?  
+So me with free time and see that, of course it is beautiful so I started coding my website and spent ages with CSS-ing my website.
 ![Old website vs New website looking](https://cdn.discordapp.com/attachments/1240991515124437013/1300751099300544522/Screenshot_2567-10-29_at_16.11.57.png?ex=6721fa5c&is=6720a8dc&hm=6401aa834d87a3cfcfcbc59469b97643d68a6d1a697fe72462e0870faba355d1&)
 
 #### 2. Navigation bar
-Before this version, it was this navbar with cool quote on the top with navigation item below.  
+In the previous version, the navbar had a cool quote and whatever on the top with navigation item below.  
 Now this version, it eats up less space, but too bad I must have it in fixed position.  
 I also added "Status" entry to redirect to my network status page, [uptime.dailitation.xyz](https://uptime.dailitation.xyz).
 ![navigation bar comparison](https://cdn.discordapp.com/attachments/1240991515124437013/1300752008852275271/Screenshot_2567-10-29_at_16.23.22.png?ex=6721fb35&is=6720a9b5&hm=5008090c0c4f2783b5c12e221f3f453d87a39565596875bc8966d7b0e98f05ae&)
@@ -32,7 +32,7 @@ Nothing changed much, I just put my logo and changed the copyleft wording.
 ![new footer vs old footer](https://cdn.discordapp.com/attachments/1240991515124437013/1300752885642166344/Screenshot_2567-10-29_at_16.26.16.png?ex=6721fc06&is=6720aa86&hm=7ebdeddf3522313d611c6264326272a151193db7bfa0c79ec2a3fbc96185457e&)
 
 #### 5. New license
-This website repository was available under MIT License, now I decided to migrate to GPL License v3.0. Provided you guys more freedom to do whatever you want to this code. (both deprecated `html` branch and current `astro` branch.)
+This website repository was previously available under MIT License, now I decided to migrate it to GPL License v3.0. Provided you guys more freedom to do whatever you want to this code. (both deprecated `html` branch and current `astro` branch.)
 ![mit to gpl](https://cdn.discordapp.com/attachments/1240991515124437013/1300753580604788777/Screenshot_2567-10-29_at_16.29.29.png?ex=6721fcac&is=6720ab2c&hm=701c9ed71b5bdc0a652896d3859439a44eafb30df05917d261aab235270636ee&)
 
 #### 6. Attributions
@@ -44,5 +44,5 @@ I started attributing to stuff I grabbed on the internet to respect their super 
 That's all of this update. If you have comment or whatever you want to tell me, find a way to contact me at [/contact](/contact).  
 Or go to this website repository and open an issue.
 
-See you later,  
-Techit Thawiang.
+See you next time,  
+**Techit Thawiang**.
