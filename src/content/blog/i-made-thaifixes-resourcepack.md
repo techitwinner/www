@@ -7,9 +7,9 @@ tags: ["minecraft", "resource-pack"]
 heroImage: "https://files.techit.win/images/site/mc-thaifixes.png"
 ---
 <div class="flex flex-row flex-wrap w-fit gap-4">
-    <a href="https://modrinth.com/resourcepack/techit-thaifixes/versions/" class="btn btn-accent btn-no-scale btn-xl btn-pill">ไปที่หน้าดาวน์โหลด</a>
-    <a href="/projects/mc-thaifixes/" class="btn btn-accent btn-no-scale btn-dashed btn-xl btn-pill">ไปที่หน้าโปรเจ็กต์</a>
-    <a href="https://github.com/techitwinner/mc-thaifixes/" class="btn btn-accent btn-no-scale btn-dashed btn-xl btn-pill"><i class="ph-fill ph-github-logo text-[36px]"></i> Source</a>
+    <a href="https://modrinth.com/resourcepack/techit-thaifixes/versions/" class="btn has-ripple  btn-accent btn-no-scale btn-xl btn-pill">ไปที่หน้าดาวน์โหลด</a>
+    <a href="/projects/mc-thaifixes/" class="btn has-ripple  btn-accent btn-no-scale btn-dashed btn-xl btn-pill">ไปที่หน้าโปรเจ็กต์</a>
+    <a href="https://github.com/techitwinner/mc-thaifixes/" class="btn has-ripple  btn-accent btn-no-scale btn-dashed btn-xl btn-pill"><i class="ph-fill ph-github-logo text-[36px]"></i> Source</a>
 </div>
 
 ไมน์คราฟต์เป็นเกม Sandbox adventure เกมหนึ่งที่ดีมาก แต่น่าเสียดายที่ฟอนต์ภาษาไทยของมันนั้นน่าเกลียดเสียเหลือเกิน แต่ก่อนหน้านี้มีผู้ใช้ YouTube ท่านหนึ่งชื่อ FatFish เขาได้ทำรีซอร์สแพ็คแก้ภาษาไทยสำหรับเวอร์ชั่น 1.13 ไปก่อนหน้าแล้ว
