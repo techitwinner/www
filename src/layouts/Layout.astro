@@ -58,6 +58,7 @@ import NavigationFooter from "../components/NavigationFooter.astro";
 		<meta name="apple-mobile-web-app-title" content="Techit Thawiang">
 		<!-- Scripts and Stuff -->
 		<script src="https://unpkg.com/@phosphor-icons/web"></script>
+		<link rel="stylesheet" type="text/css" href="/assets/css/ripple.css">
 	</head>
 	<body class="roboto">
 		<NavigationRail/>
@@ -65,5 +66,7 @@ import NavigationFooter from "../components/NavigationFooter.astro";
 			<slot />
 			<NavigationFooter/>
 		</div>
+		<script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+		<script is:inline src="/assets/js/ripple.js"></script>
 	</body>
 </html>
