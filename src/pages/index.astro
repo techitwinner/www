@@ -1,5 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import PostCard from "../components/PostCard.astro";
+import {getCollection} from "astro:content";
+
+const blogs = (await getCollection('blog')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+).slice(0, 4);
 ---
 
 <Layout
@@ -18,9 +24,9 @@ import Layout from '../layouts/Layout.astro';
 		</section>
 		<section class="explore">
 			<div class="container text-center md:text-start">
-				<h1 class="text-5xl">Explore</h1>
+				<p class="heading2">Explore</p>
 				<p class="text-lg mb-4">Explore through my website, blog posts, about me or how to contact me.</p>
-				<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2">
+				<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2">
 					<a href="/blog" class="card card-outline">
 						<div class="cover">
 							<svg class="w-full aspect-[5/3]" viewBox="0 0 50 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -74,14 +80,14 @@ import Layout from '../layouts/Layout.astro';
 		</section>
 		<section class="introduce">
 			<div class="container text-center md:text-start">
-				<h2 class="text-5xl mb-4">Introduction</h2>
-				<div class="grid grid-cols-1 md:grid-cols-2 text-xl">
+				<h2 class="heading2">Introduction</h2>
+				<div class="grid grid-cols-1 md:grid-cols-2 big-text">
 					<section class="flex flex-col gap-8">
 						<p>Hi, My name is Techit Thawiang. An <span style="text-decoration:underline;">almost fifteen</span> years old kid with a passion on many thing, especially coding. You can call me Sumo, that's my nickname.</p>
 						<p>I'm living in Chonburi, Thailand.<br/>Currently not finding a job or collaboration.</p>
 					</section>
 					<section class="hidden md:flex flex-col justify-end items-end ">
-						<a class="btn" href="/about">
+						<a class="btn has-ripple " href="/about">
 							About Me
 							<i class="ph ph-caret-right text-xl"></i>
 						</a>
@@ -89,6 +95,23 @@ import Layout from '../layouts/Layout.astro';
 				</div>
 			</div>
 		</section>
+		<div class="i9d2">
+			<div class="container">
+				<p class="heading2">Latest Posts</p>
+				<p class="text-lg mb-4">My latest 4 posts, for older blog post please visit <a class="link">blog page</a>.</p>
+				{
+					blogs.map((post) => (
+						<PostCard
+							title={post.data.title}
+							desc={post.data.description}
+							url={`/blog/${post.slug}`}
+							date={post.data.pubDate.toISOString()}
+							tags={post.data.tags ?? []}
+						/>
+					))
+				}
+			</div>
+		</div>
 	</main>
 </Layout>
 
