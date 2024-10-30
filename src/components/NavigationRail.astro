@@ -20,7 +20,7 @@ const currentPath = Astro.url.pathname;
                 ))}
             </div>
             <div class="items-end flex md:hidden flex-row">
-                <label for="drawer-toggle" class="drawer-actual-toggle btn btn-tonal"><i class="ph ph-list"></i></label>
+                <label for="drawer-toggle" class="drawer-actual-toggle btn has-ripple btn-tonal"><i class="ph ph-list"></i></label>
             </div>
         </div>
     </nav>
@@ -29,7 +29,7 @@ const currentPath = Astro.url.pathname;
     <input type="checkbox" id="drawer-toggle" class="drawer-toggle">
     <aside class="drawer">
         <div class="drawer-content">
-            <label for="drawer-toggle" class="drawer-actual-toggle btn btn-tonal mb-4"><i class="ph ph-x"></i></label>
+            <label for="drawer-toggle" class="drawer-actual-toggle btn has-ripple btn-tonal mb-4"><i class="ph ph-x"></i></label>
             {navItems.map((item) => (
                     <a href={item.href} class={`drawer-item${currentPath === item.href ? ' active' : ''}`}>
                         {item.label}
