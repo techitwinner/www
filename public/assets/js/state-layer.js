@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    const hasStateLayer = ['.btn', '.topbar-navitem'].join(',');
+    const hasStateLayer = ['.btn', '.topbar-navitem', '.drawer-item'].join(',');
     $(hasStateLayer).each(function () {
         const $parent = $(this);
 
