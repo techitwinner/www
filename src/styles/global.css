@@ -28,6 +28,7 @@
     --transition4: all var(--animation-duration1) cubic-bezier(var(--animation-bezier-easeIn));
 
     --navbar-height: 4rem;
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
 
 body {
@@ -124,7 +125,7 @@ ul {
 
 /* ----- START CUSTOM STYLING ----- */
 .topbar {
-    @apply shadow-md overflow-x-hidden;
+    overflow-x: hidden;
     display: flex;
     height: var(--navbar-height);
     width: 100%;
@@ -135,6 +136,7 @@ ul {
     z-index: 1000;
     align-items: center;
     background: rgba(var(--md-sys-color-surface));
+    border-bottom: 1px solid rgba(var(--md-sys-color-outline-variant));
     .topbar-container {
         @apply w-full max-w-[60rem] md:max-w-[72rem] gap-2 flex flex-col px-4 md:px-8;
         height: 100%;
@@ -144,6 +146,8 @@ ul {
         align-items: center;
     }
     .topbar-navitem {
+        position: relative;
+        overflow: hidden;
         user-select: none;
         cursor: pointer;
         display: inline-flex;
@@ -269,6 +273,7 @@ ul {
 }
 
 .card {
+    position: relative;
     border-radius: 0.75rem;
     overflow: hidden;
     background: rgba(var(--md-sys-color-surface));
@@ -285,7 +290,7 @@ ul {
 }
 
 .card-outline {
-    @apply shadow-none hover:shadow-lg hover:opacity-90 active:opacity-80;
+    @apply hover:shadow-lg;
     border: 1px solid rgba(var(--md-sys-color-outline-variant));
     transition: var(--transition1);
     .content {
@@ -308,7 +313,7 @@ ul {
     gap: 0.5rem;
     position: relative;
     align-items: center;
-    padding: 0.25rem 1.25rem;
+    padding: 0.25rem 1.5rem;
     border-radius: 20px;
     background: rgba(var(--md-sys-color-primary));
     color: rgba(var(--md-sys-color-on-primary));
@@ -317,9 +322,6 @@ ul {
     overflow: hidden;
     --btn-ripple-color: rgba(var(--md-sys-color-on-primary),0.5);
 }
-.btn:hover {
-    opacity: 0.9;
-}
 .btn-outline {
     background: transparent;
     color: rgba(var(--md-sys-color-primary));
@@ -327,7 +329,9 @@ ul {
 }
 .btn-outline:hover {
     @apply shadow-lg;
-    background: rgba(var(--md-sys-color-on-surface),0.08);
+}
+.btn-outline:focus {
+    border: 1px solid rgba(var(--md-sys-color-primary));
 }
 .btn-tonal {
     background: rgba(var(--md-sys-color-secondary-container));
