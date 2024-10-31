@@ -12,7 +12,7 @@
             opacity: 0.15,
             color: "auto",
             multi: true,
-            duration: 0.3,
+            duration: 0.5,
             rate: function(pxPerSecond) {
                 return pxPerSecond;
             },
