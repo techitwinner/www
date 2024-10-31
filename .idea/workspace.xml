@@ -5,20 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ff4e740-d225-4c92-9864-14b37ea4a4df" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/public/assets/css/techits-stuff.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/navbar-autohide.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/state-layer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/tooltip.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageSection.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageSection.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Posts/PostCard.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Posts/PostCard.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/blog/i-made-thaifixes-resourcepack.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/blog/i-made-thaifixes-resourcepack.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/ripple.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/ripple.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavigationRail.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavigationRail.astro" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layouts/Layout.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/Layout.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/about.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/about.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/contact.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/contact.astro" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/photography.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/photography.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/posts.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/posts.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/posts/[...slug].astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/posts/[...slug].astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/projects.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/projects.astro" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/projects/mc-thaifixes.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/projects/mc-thaifixes.astro" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/global.css" afterDir="false" />
     </list>
@@ -32,6 +27,7 @@
       <list>
         <option value="Astro Component" />
         <option value="TypeScript File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -47,20 +43,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "astro",
-    "last_opened_file_path": "/Users/techit/Projects/GitHub/web/public",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "/Users/techit/Documents/GitHub/web/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/techit/Projects/GitHub/web/public&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/techit/Documents/giskette/www/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public" />
@@ -90,6 +86,9 @@
       <workItem from="1727665706204" duration="244000" />
       <workItem from="1727871520100" duration="1318000" />
       <workItem from="1728535657963" duration="5641000" />
+      <workItem from="1730345140400" duration="616000" />
+      <workItem from="1730373070807" duration="3402000" />
+      <workItem from="1730378380351" duration="4000" />
     </task>
     <servers />
   </component>
