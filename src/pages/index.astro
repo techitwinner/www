@@ -87,7 +87,7 @@ const blogs = (await getCollection('blog')).sort(
 						<p>I'm living in Chonburi, Thailand.<br/>Currently not finding a job or collaboration.</p>
 					</section>
 					<section class="hidden md:flex flex-col justify-end items-end ">
-						<a class="btn has-ripple " href="/about">
+						<a class="btn has-ripple has-tooltip" data-tooltip="Go to about me." href="/about">
 							About Me
 							<i class="ph ph-caret-right text-xl"></i>
 						</a>
@@ -132,8 +132,8 @@ const blogs = (await getCollection('blog')).sort(
 		flex-direction: column;
 	}
 	.introduce {
-		background-color: rgba(var(--md-sys-color-inverse-surface));
-		color: rgba(var(--md-sys-color-inverse-on-surface));
+		background-color: rgba(var(--md-sys-color-surface-container));
+		color: rgba(var(--md-sys-color-on-surface));
 		align-items: center;
 		display: flex;
 		flex-direction: column;
